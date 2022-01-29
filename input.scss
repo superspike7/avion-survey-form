@@ -49,6 +49,9 @@ table {
 
 // ==================== css reset  ====================
 
+// fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
 
 // color palette
 
@@ -64,8 +67,22 @@ $light: #AEFEFF;
   box-shadow: 0 35px 68px 0 $dark, inset 0 -8px 16px 0 $light;
 }
 
+.text-input {
+	border: none;
+	background: #eee;
+	font-size: 1.3em;
+	border-radius: 0.5em;
+	padding: 0.3em;
+
+	&::placeholder {
+		color: #aaa;
+	}
+}
+
 
 #main {
+	color: $primary;
+	font-family: Montserrat;
 	background: #AEFEFF;
 	display: flex;
 	justify-content: center;
@@ -77,8 +94,62 @@ $light: #AEFEFF;
 		border-radius: 5em;
 		height: 80vh;
 		width: 80vw;
-		@extend .shadow-effect
+		@extend .shadow-effect;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 
+
+		.illustration {
+			background: $normal;
+			border-radius: 5em 0 0 5em;
+			padding: 2em;
+
+			.title {
+				font-weight: bold;
+				font-size: 3em;
+			}
+
+			.description {
+				font-size: 1.5em;
+				font-weight: 300;
+			}
+
+			* {
+				margin-bottom: 0.5em;
+				text-align: center;
+			}
+
+			img {
+				margin-top: 2em;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+
+		.form-container {
+			padding: 2.5em;
+
+			.field {
+				margin: 0 auto;
+				margin-bottom: 2em;
+				width: 60%;
+                display: flex;
+				flex-direction: column;
+
+				label {
+				 	margin-bottom: 0.4em;
+					font-weight: bold;
+				}
+
+				input[type=text] {
+					@extend .text-input
+				}
+
+				input[type=email] {
+					@extend .text-input
+				}
+			}
+		}
 	}
 
 }
