@@ -57,15 +57,19 @@ table {
   box-shadow: 0 35px 68px 0 #35858B, inset 0 -8px 16px 0 #AEFEFF;
 }
 
-.text-input, #main .container .form-container .field input[type=email], #main .container .form-container .field input[type=text] {
+.text-input, #main .container .form-container .field textarea, #main .container .form-container .field select, #main .container .form-container .field input[type=text],
+#main .container .form-container .field input[type=email],
+#main .container .form-container .field input[type=number] {
   border: none;
   background: #eee;
   font-size: 1.3em;
   border-radius: 0.5em;
   padding: 0.3em;
 }
-.text-input::placeholder, #main .container .form-container .field input[type=email]::placeholder, #main .container .form-container .field input[type=text]::placeholder {
-  color: #aaa;
+.text-input::placeholder, #main .container .form-container .field textarea::placeholder, #main .container .form-container .field select::placeholder, #main .container .form-container .field input[type=text]::placeholder,
+#main .container .form-container .field input[type=email]::placeholder,
+#main .container .form-container .field input[type=number]::placeholder {
+  color: #666;
 }
 
 #main {
@@ -120,6 +124,33 @@ table {
 #main .container .form-container .field label {
   margin-bottom: 0.4em;
   font-weight: bold;
+}
+#main .container .form-container .field select {
+  background: #fff;
+  border: 1px #072227 solid;
+  color: #072227;
+}
+#main .container .form-container .field textarea {
+  font-weight: 300;
+}
+#main .container .form-container .field textarea::placeholder {
+  color: #666;
+}
+#main .container .form-container .button {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5em 1em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #35858B;
+  color: #eee;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+#main .container .form-container .button:hover {
+  background: #4FBDBA;
 }
 
 /*# sourceMappingURL=output.css.map */

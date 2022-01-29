@@ -75,7 +75,7 @@ $light: #AEFEFF;
 	padding: 0.3em;
 
 	&::placeholder {
-		color: #aaa;
+		color: #666;
 	}
 }
 
@@ -141,12 +141,45 @@ $light: #AEFEFF;
 					font-weight: bold;
 				}
 
-				input[type=text] {
-					@extend .text-input
+				input[type=text],
+				input[type=email],
+				input[type=number] {
+					@extend .text-input;
 				}
 
-				input[type=email] {
-					@extend .text-input
+				select {
+				   @extend .text-input;
+				   background: #fff;
+				   border: 1px $primary solid;
+				   color: $primary;
+				}
+
+				textarea {
+					@extend .text-input;
+					font-weight: 300;
+
+					&::placeholder {
+						color: #666;
+					}
+				}
+
+			}
+
+            .button {
+				display: block;
+				margin: 0 auto;
+				padding: 0.5em 1em;
+				font-size: 1.5em;
+				text-transform: uppercase;
+				font-weight: bold;
+				background: $dark;
+				color: #eee;
+				border: none;
+				border-radius: 0.5em;
+				cursor: pointer;
+
+				&:hover {
+				 	background: $normal;
 				}
 			}
 		}
