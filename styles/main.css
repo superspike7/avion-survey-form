@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.shadow-effect, #main .container {
+  box-shadow: 0 35px 68px 0 #35858B, inset 0 -8px 16px 0 #AEFEFF;
+}
+
+.text-input, #main .container .form-container .field input[type=text],
+#main .container .form-container .field input[type=email],
+#main .container .form-container .field input[type=number], #main .container .form-container .field select, #main .container .form-container .field textarea {
+  border: none;
+  background: #eee;
+  font-size: 1.3em;
+  border-radius: 0.5em;
+  padding: 0.3em;
+}
+.text-input::placeholder, #main .container .form-container .field input[type=text]::placeholder,
+#main .container .form-container .field input[type=email]::placeholder,
+#main .container .form-container .field input[type=number]::placeholder, #main .container .form-container .field select::placeholder, #main .container .form-container .field textarea::placeholder {
+  color: #666;
+}
+
+#main {
+  color: #072227;
+  font-family: Montserrat;
+  background: #AEFEFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#main .container {
+  background: white;
+  border-radius: 5em;
+  height: 80vh;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#main .container .illustration {
+  background: #4FBDBA;
+  border-radius: 5em 0 0 5em;
+  padding: 2em;
+}
+#main .container .illustration .title {
+  font-weight: bold;
+  font-size: 3em;
+}
+#main .container .illustration .description {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+#main .container .illustration * {
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+#main .container .illustration img {
+  margin-top: 2em;
+  display: block;
+  margin: 0 auto;
+}
+#main .container .form-container {
+  padding: 2.5em;
+}
+#main .container .form-container .field {
+  margin: 0 auto;
+  margin-bottom: 2em;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+#main .container .form-container .field label {
+  margin-bottom: 0.4em;
+  font-weight: bold;
+}
+#main .container .form-container .field select {
+  background: #fff;
+  border: 1px #072227 solid;
+  color: #072227;
+}
+#main .container .form-container .field textarea {
+  font-weight: 300;
+}
+#main .container .form-container .field textarea::placeholder {
+  color: #666;
+}
+#main .container .form-container .button {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5em 1em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #4FBDBA;
+  color: #eee;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+#main .container .form-container .button:hover {
+  background: #35858B;
+}
+
+/*# sourceMappingURL=main.css.map */

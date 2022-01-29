@@ -1,0 +1,5 @@
+@use 'colors';
+
+.shadow-effect {
+  box-shadow: 0 35px 68px 0 colors.$dark, inset 0 -8px 16px 0 colors.$light;
+}

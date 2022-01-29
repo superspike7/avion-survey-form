@@ -1,0 +1,11 @@
+.text-input {
+	border: none;
+	background: #eee;
+	font-size: 1.3em;
+	border-radius: 0.5em;
+	padding: 0.3em;
+
+	&::placeholder {
+		color: #666;
+	}
+}
