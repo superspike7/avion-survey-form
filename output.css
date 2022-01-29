@@ -143,14 +143,15 @@ table {
   font-size: 1.5em;
   text-transform: uppercase;
   font-weight: bold;
-  background: #35858B;
+  background: #4FBDBA;
   color: #eee;
   border: none;
   border-radius: 0.5em;
   cursor: pointer;
+  box-shadow: 0 3px 6px 0 #35858B, inset 0 -4px 4px 0 #AEFEFF;
 }
 #main .container .form-container .button:hover {
-  background: #4FBDBA;
+  background: #35858B;
 }
 
 /*# sourceMappingURL=output.css.map */
