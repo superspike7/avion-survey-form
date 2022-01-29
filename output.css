@@ -148,7 +148,6 @@ table {
   border: none;
   border-radius: 0.5em;
   cursor: pointer;
-  box-shadow: 0 3px 6px 0 #35858B, inset 0 -4px 4px 0 #AEFEFF;
 }
 #main .container .form-container .button:hover {
   background: #35858B;
